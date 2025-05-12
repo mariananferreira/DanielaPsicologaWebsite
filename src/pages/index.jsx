@@ -10,6 +10,7 @@ import FAQs from '@/components/FAQs'
 import OurSpace from '@/components/OurSpace'
 import Intro from '@/components/Intro'
 import Testimonials from '@/components/Testimonials'
+import Psicologia from '@/components/Psicologia'
 
 
 
@@ -17,19 +18,15 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Centro Terapêutico Di</title>
+        <title>Daniela Leal, Psicóloga</title>
       </Head>
       <Header />
       <main className='primaryBack'>
         <Hero />
-        <Intro />
+
         <AboutMe />
-        <OurTeam />
-        <OurSpace />
-        <Parceries />
-        <Testimonials />
-        <Contacts />
-        <FAQs />
+        <Psicologia />
+
       </main>
       <Footer />
     </>

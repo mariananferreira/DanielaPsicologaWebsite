@@ -83,6 +83,15 @@
   font-style: normal;
 }
 
+.sectionSubTitles {
+  color:#5b5044;
+  font-family: 'Noto Color Emoji';
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  font-style: normal;
+}
+
 .mobileNumber {
   padding-left: 10px;
 }
@@ -131,7 +140,7 @@
   background-color: #e8cfc2;
 }
 .primaryColor {
-  color: #e8cfc2;
+  color: #fefcf9;
 }
 
 .primaryBack {
@@ -139,7 +148,7 @@
 }
 
 .secondaryBack {
-  background-color: #e8cfc2;
+  background-color: #F9F5F2;
 }
 
 .buttonStyle {
