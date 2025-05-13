@@ -11,10 +11,7 @@ export default function LeadershipProgramSection() {
 
         {/* Cabeçalho */}
         <div className="mb-10 text-center">
-          <h3 className="mb-2 text-xl font-medium text-[#7c3e2f]">
-            Mentoria para a Liderança
-          </h3>
-          <h2 className="mb-2 text-3xl font-bold text-[#7c3e2f]">
+          <h2 className="sectionTitles text-3xl tracking-tight sm:text-3xl">
             Programa GUAL
           </h2>
           <p className="text-lg italic text-[#5a4238]">Grow Up As a Leader</p>

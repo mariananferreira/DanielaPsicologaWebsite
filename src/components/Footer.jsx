@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Container } from '@/components/Container'
 import { FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa'
-import livro from '@/images/livro.png'
+
 
 export function Footer() {
   return (

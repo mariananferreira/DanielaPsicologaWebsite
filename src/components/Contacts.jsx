@@ -1,5 +1,3 @@
-// Atualizado para se alinhar ao novo site: mais leve, claro e direto
-
 import Image from 'next/image'
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
@@ -7,7 +5,7 @@ import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 import { Container } from '@/components/Container'
-import SM from '@/images/space1.jpeg'
+import SM from '@/images/cont.jpg'
 
 export function Contacts() {
   const [formData, setFormData] = useState({
@@ -64,16 +62,15 @@ export function Contacts() {
           <h2 className="sectionTitles text-3xl font-bold text-[#7c3e2f]">
             Aqui, começa a mudança
           </h2>
-
         </div>
 
         <div className="grid items-start gap-10 md:grid-cols-2">
           {/* Imagem decorativa - opcional, substituível por algo mais abstrato */}
-          <div className="overflow-hidden rounded-2xl shadow-md">
+          <div className="mx-auto max-w-md overflow-hidden rounded-2xl shadow-md md:max-w-full">
             <Image
               src={SM}
               alt="Espaço terapêutico"
-              className="h-full w-full object-cover object-center"
+              className="h-auto w-full rounded-2xl object-cover object-center"
               priority
             />
           </div>
@@ -145,25 +142,24 @@ export function Contacts() {
                 Enviar
               </button>
             </div>
+            <div className="mt-10 text-center">
+              <p className="text-sm text-gray-600">
+                Ou contacta-me diretamente via{' '}
+                <a href="tel:+351918275236" className="underline">
+                  +351 918 275 236
+                </a>{' '}
+                ou pelo Instagram:{' '}
+                <a
+                  href="https://www.instagram.com/danielaleal.psicologia/"
+                  className="underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  @danielaleal.psicologia
+                </a>
+              </p>
+            </div>
           </form>
-        </div>
-
-        <div className="mt-10 text-center">
-          <p className="text-sm text-gray-600">
-            Ou contacta-nos diretamente via{' '}
-            <a href="tel:+351918275236" className="underline">
-              +351 918 275 236
-            </a>{' '}
-            ou pelo Instagram:{' '}
-            <a
-              href="https://www.instagram.com/danielaleal.psicologia/"
-              className="underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              @danielaleal.psicologia
-            </a>
-          </p>
         </div>
 
         <ToastContainer />
