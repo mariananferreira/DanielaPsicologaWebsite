@@ -129,7 +129,7 @@ export default function ProfessionalTrainingSection() {
               },
               {
                 title:
-                  'Especialização em Intervenção Psicossocial Afirmativa com Pessoas LGBTQIA+',
+                  'Intervenção Psicossocial Afirmativa LGBTQIA+',
                 url: 'https://www.inspsic.pt/curso/1-psicologos/301-especializacao-avancada-pos-universitaria-em-intervencao-psicossocial-afirmativa-com-pessoas-lgbtq-advanced-professional-program',
               },
               {
