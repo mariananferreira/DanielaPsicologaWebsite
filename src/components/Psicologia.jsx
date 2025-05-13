@@ -67,7 +67,7 @@ export default function PsychologySection() {
               {/* Psicoterapeuta */}
               <div className="flex flex-col items-center rounded-xl bg-white p-6 shadow-md">
                 <HeartHandshake size={36} className="mb-4 text-[#ebbaa2]" />
-                <p className="font-semibold">Psicoterapeuta</p>
+                <p className="font-semibold"></p>
               </div>
 
               {/* Cognitivo-Comportamental */}

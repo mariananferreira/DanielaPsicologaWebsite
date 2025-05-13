@@ -10,6 +10,7 @@ import {
   Users2,
 } from 'lucide-react'
 import Image from 'next/image'
+import { ExpandableCourseCard } from '@/components/ExpandableCourse'
 import { Container } from '@/components/Container'
 import photo from '@/images/livro.jpg'
 
@@ -115,38 +116,138 @@ export default function ProfessionalTrainingSection() {
             reconhecidas)
           </p>
         </div>
-        {/* Exemplos de Cursos */}
+        {/* Todos os Cursos */}
         <div className="mb-20">
           <h3 className="mb-6 text-xl font-semibold text-[#7c3e2f]">
             Exemplos de Cursos:
           </h3>
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid items-start gap-6 md:grid-cols-2">
             {[
               {
-                title: 'Curso: Acompanhamento psicológico afirmativo',
+                title: 'Curso em Linguagem Inclusiva: Da Teoria à Utilização',
                 url: 'https://www.inspsic.pt/curso/1-psicologos/325',
               },
               {
                 title:
-                  'Especialização em Intervenção Psicossocial com Pessoas LGBTQIA+',
+                  'Especialização em Intervenção Psicossocial Afirmativa com Pessoas LGBTQIA+',
                 url: 'https://www.inspsic.pt/curso/1-psicologos/301-especializacao-avancada-pos-universitaria-em-intervencao-psicossocial-afirmativa-com-pessoas-lgbtq-advanced-professional-program',
               },
-            ].map((course, idx) => (
-              <a
-                key={idx}
-                href={course.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block rounded-xl border border-[#eee] bg-white p-6 shadow-sm transition hover:border-[#ebbaa2] hover:shadow-md"
-              >
-                <p className="mb-1 font-semibold text-[#7c3e2f]">
-                  {course.title}
-                </p>
-                <p className="text-sm text-gray-600">
-                  Ver mais detalhes no site da INSPSIC
-                </p>
-              </a>
-            ))}
+              {
+                title: 'LGBTQI+: Da Construção da Identidade à Inclusão Social',
+                shortDescription: 'Ação de sensibilização | Duração: 1h',
+                details: [
+                  'Conceitos introdutórios: orientação sexual, identidade de género, expressão de género, sexo;',
+                  'As dimensões da identidade sexual;',
+                  'Experiências de discriminação e resiliência da comunidade LGBTQI+;',
+                  'Contexto sociolegal.',
+                ],
+              },
+              {
+                title: 'Inclusão da Comunidade LGBTQI+ no Local de Trabalho',
+                shortDescription: 'Ação de sensibilização | Duração: 1h',
+                details: [
+                  'Realidade LGBTQI+ no trabalho;',
+                  'Importância da inclusão organizacional;',
+                  'Produtividade e bem-estar LGBTQI+;',
+                  'Estratégias de inclusão no trabalho.',
+                ],
+              },
+              {
+                title: 'A Comunicação Inclusiva no Local de Trabalho',
+                shortDescription: 'Ação de sensibilização | Duração: 1h',
+                details: [
+                  'Definição de linguagem inclusiva;',
+                  'Conceitos sobre género, identidade, etnia, deficiência e neurodivergência;',
+                  'Vantagens da comunicação inclusiva;',
+                  'Estratégias de comunicação inclusiva.',
+                ],
+              },
+              {
+                title: 'Género: Da Igualdade à Equidade',
+                shortDescription: 'Ação de sensibilização | Duração: 1h',
+                details: [
+                  'Definições de género, igualdade e equidade;',
+                  'Viés inconsciente e construções sociais de género;',
+                  'Gender pay gap, glass ceiling e glass cliff;',
+                  'Práticas para equidade de género nas empresas.',
+                ],
+              },
+              {
+                title:
+                  'Neurodiversidade: A Inclusão que Potencia o Corporativo',
+                shortDescription: 'Ação de sensibilização | Duração: 1h',
+                details: [
+                  'Definição de neurodiversidade e neurodivergência;',
+                  'Diagnóstico, necessidades e especificidades;',
+                  'Inclusão no local de trabalho.',
+                ],
+              },
+              {
+                title: 'A Inclusão da Comunidade LGBTQI+ no Local de Trabalho',
+                shortDescription: 'Formação curta | Duração: 4h',
+                details: [
+                  'Conceitos base: orientação sexual, identidade de género, expressão de género;',
+                  'Dimensões da identidade sexual e contexto sociolegal;',
+                  'Discriminação e resiliência da comunidade LGBTQI+ no trabalho;',
+                  'Importância da inclusão para o bem-estar e produtividade;',
+                  'Estratégias práticas de inclusão no ambiente organizacional.',
+                ],
+              },
+              {
+                title: 'Liderança Inclusiva: Todas as Identidades Contam',
+                shortDescription: 'Formação curta | Duração: 4h',
+                details: [
+                  'Estilos de liderança e inclusão;',
+                  'Fundamentos da liderança inclusiva;',
+                  'Construção de práticas de liderança com equidade.',
+                ],
+              },
+              {
+                title:
+                  'Bem-Estar Organizacional, Saúde Mental e Prevenção do Burnout',
+                shortDescription: 'Formação curta | Duração: 4h',
+                details: [
+                  'Saúde mental e burnout;',
+                  'Estatísticas organizacionais de saúde mental;',
+                  'Boas práticas e estratégias de prevenção.',
+                ],
+              },
+              {
+                title:
+                  'Inteligência Emocional: Educar o Cérebro Organizacional',
+                shortDescription: 'Formação curta | Duração: 4h',
+                details: [
+                  'Modelo de inteligência emocional;',
+                  'Aplicação prática nas organizações e promoção das suas dimensões;',
+                  'Contributo da inteligência emocional para a identidade organizacional;',
+                  'Boas práticas para bem-estar organizacional com base na inteligência emocional.',
+                ],
+              },
+            ].map((course, idx) =>
+              course.url ? (
+                <a
+                  key={idx}
+                  href={course.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block rounded-xl border border-[#eee] bg-white p-6 shadow-sm transition hover:border-[#ebbaa2] hover:shadow-md"
+                >
+                  <p className="mb-1 font-semibold text-[#7c3e2f]">
+                    {course.title}
+                  </p>
+                  <p className="text-sm text-gray-600">
+                    Ver mais detalhes no site da INSPSIC
+                  </p>
+                </a>
+              ) : (
+                <ExpandableCourseCard
+                  key={idx}
+                  title={course.title}
+                  shortDescription={course.shortDescription}
+                  details={course.details}
+                />
+              )
+            )}
           </div>
         </div>
 
