@@ -103,7 +103,7 @@ export default function LeadershipProgramSection() {
           <div className="pointer-events-none absolute inset-0 bg-[url('/textures/soft-pattern.png')] bg-cover bg-center opacity-10"></div>
 
           <h2 className="sectionSubTitles font-extraboldmd:text-4xl mb-4 text-3xl">
-            ✨ Investe na tua liderança com consciência.
+            Investe na tua liderança com consciência.
           </h2>
           <p className="text mb-8 text-lg text-gray-700">
             Marca já a tua sessão de esclarecimento gratuita e descobre como

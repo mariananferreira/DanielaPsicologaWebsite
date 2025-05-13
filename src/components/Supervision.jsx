@@ -1,13 +1,21 @@
+import Image from 'next/image'
 import { CheckCircle, Clock, Globe, BookOpen, Users, Leaf } from 'lucide-react'
 import { Container } from '@/components/Container'
+import supervisionImage from '@/images/livro1.jpg' // Substitui pelo caminho da tua imagem
 
 export default function ClinicalSupervisionSection() {
   return (
-    <section id="Supervision" aria-label="Sobre nós" className="primaryBack py-6">
+    <section
+      id="Supervision"
+      aria-label="Sobre nós"
+      className="primaryBack py-6"
+    >
       <Container className="relative">
-        {/* Introdução */}
         <hr className="mx-auto mb-24 w-3/4 border-t-2 border-[#e8cfc2]" />
-        <div className="grid items-start gap-10 md:grid-cols-2">
+
+        {/* Introdução com imagem */}
+        <div className="mb-16 grid items-start gap-10 md:grid-cols-2">
+          {/* Texto */}
           <div>
             <h2 className="sectionSubTitles mb-4 text-3xl font-bold text-[#b45f42]">
               Supervisão Clínica
@@ -17,33 +25,45 @@ export default function ClinicalSupervisionSection() {
               refletir sobre prática clínica e promover o autocuidado
               profissional.
             </p>
+
+            {/* Bloco agrupado: Modalidades e Formato */}
+            <div className="mt-6 space-y-4 rounded-xl bg-white p-5 shadow-sm">
+              <div className="flex items-start gap-3">
+                <Clock className="text-[#b45f42]" size={26} />
+                <div>
+                  <p className="font-semibold text-[#b45f42]">Modalidades</p>
+                  <p className="text-sm text-gray-700">
+                    Individual (60min)
+                    <br />
+                    Grupo (90min, 2–4 participantes)
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <Globe className="text-[#b45f42]" size={26} />
+                <div>
+                  <p className="font-semibold text-[#b45f42]">Formato</p>
+                  <p className="text-sm text-gray-700">
+                    Presencial (Maia – Porto) ou Online
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          {/* Modalidades e formato - agora empilhado */}
-          <div className="flex flex-col gap-6">
-            <div className="flex items-start gap-3">
-              <Clock className="text-[#b45f42]" size={28} />
-              <div>
-                <p className="text font-semibold">Modalidades:</p>
-                <p className="text">
-                  Individual (60min)
-                  <br />
-                  Grupo (90min, 2–4 participantes)
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start gap-3">
-              <Globe className="text-[#b45f42]" size={28} />
-              <div>
-                <p className="text font-semibold">Presencial ou Online</p>
-                <p className="text">Maia – Porto ou digital</p>
-              </div>
-            </div>
+          {/* Imagem */}
+          <div className="flex justify-center">
+            <Image
+              src={supervisionImage}
+              alt="Supervisão Clínica"
+              className="w-full max-w-sm rounded-2xl object-cover shadow-md"
+              priority
+            />
           </div>
         </div>
 
-        {/* Áreas de Foco - agora 2 colunas */}
-        <div className="mt-16">
+        {/* Áreas de Foco */}
+        <div className="mt-10">
           <h3 className="mb-6 text-2xl font-semibold text-[#b45f42]">
             Áreas de Foco:
           </h3>
@@ -65,7 +85,7 @@ export default function ClinicalSupervisionSection() {
           </div>
         </div>
 
-        {/* Call to Action */}
+        {/* CTA */}
         <div className="mt-16 text-center">
           <a
             href="#contacts"
