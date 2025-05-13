@@ -6,10 +6,10 @@ import { AboutMe } from '@/components/AboutMe'
 import OurTeam from '@/components/OurTeam'
 import { Contacts } from '@/components/Contacts'
 import Parceries from '@/components/Parceries'
-import FAQs from '@/components/FAQs'
+import Professional from '@/components/Professional'
 import OurSpace from '@/components/OurSpace'
 import Intro from '@/components/Intro'
-import Testimonials from '@/components/Testimonials'
+import Supervision from '@/components/Supervision'
 import Psicologia from '@/components/Psicologia'
 
 
@@ -23,9 +23,11 @@ export default function Home() {
       <Header />
       <main className='primaryBack'>
         <Hero />
-
         <AboutMe />
         <Psicologia />
+        <Supervision/>
+        <Professional/>
+        
 
       </main>
       <Footer />

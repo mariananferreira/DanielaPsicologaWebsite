@@ -122,13 +122,13 @@ function MobileNavigation() {
                 className="absolute inset-x-4 top-full mt-4 flex flex-col space-y-4 rounded-lg bg-white p-4 text-lg shadow-lg ring-1 ring-black/5"
               >
                 <MobileNavLink href="#aboutme">Sobre mim</MobileNavLink>
-                <MobileNavLink href="#ourteam">
+                <MobileNavLink href="#Psicologia">
                   Psicologia Clínica
                 </MobileNavLink>
-                <MobileNavLink href="#ourspace">
+                <MobileNavLink href="#Supervision">
                   Supervisão Clínica
                 </MobileNavLink>
-                <MobileNavLink href="#parceries">
+                <MobileNavLink href="#training">
                   Formação Profissional
                 </MobileNavLink>
                 <MobileNavLink href="#contacts">Programa GUAL</MobileNavLink>
@@ -191,9 +191,9 @@ export function Header() {
             </div>
             <nav className="hidden space-x-6 lg:flex">
               <NavLink href="#aboutme">Sobre mim</NavLink>
-              <NavLink href="#ourteam">Psicologia Clínica</NavLink>
-              <NavLink href="#ourspace">Supervisão Clínica</NavLink>
-              <NavLink href="#parceries">Formação Profissional</NavLink>
+              <NavLink href="#Psicologia">Psicologia Clínica</NavLink>
+              <NavLink href="#Supervision">Supervisão Clínica</NavLink>
+              <NavLink href="#training">Formação Profissional</NavLink>
               <NavLink href="#contacts">Programa GUAL</NavLink>
               <NavLink href="#faqs">Happy Mind Labs</NavLink>
               <NavLink href="#faqs">Blog</NavLink>
