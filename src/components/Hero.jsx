@@ -49,7 +49,7 @@ export default function HeroSection() {
 
           <div className="mt-8 flex justify-center md:justify-end">
             <a
-              href="#contacts"
+              href="#Contactos"
               className="inline-flex items-center justify-center rounded-md bg-[#F9F5F2] px-6 py-3 text-base font-medium text-gray-900 transition duration-200 hover:bg-[#ebbaa2]"
             >
               Agendar
