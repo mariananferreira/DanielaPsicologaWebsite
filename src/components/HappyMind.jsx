@@ -11,7 +11,7 @@ import {
   Target,
 } from 'lucide-react'
 
-import happyMindImage from '@/images/happy.jpeg' // substitui pelo teu caminho real
+import happyMindImage from '@/images/happy.png' // substitui pelo teu caminho real
 
 export default function HappyMindLabsSection() {
   return (
