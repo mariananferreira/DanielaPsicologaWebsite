@@ -8,6 +8,7 @@ import {
   Lightbulb,
   Network,
   Users2,
+  Handshake
 } from 'lucide-react'
 import Image from 'next/image'
 import { ExpandableCourseCard } from '@/components/ExpandableCourse'
@@ -90,6 +91,7 @@ export default function ProfessionalTrainingSection() {
           <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
             {[
               { icon: Heart, label: 'Saúde Mental' },
+              { icon: Handshake, label: 'Diversidade, Equidade, Inclusão' },
               { icon: MessageSquare, label: 'Comunicação' },
               { icon: Lightbulb, label: 'Liderança' },
               { icon: Network, label: 'Relacionamento Interpessoal' },
