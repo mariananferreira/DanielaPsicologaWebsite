@@ -131,7 +131,7 @@ function MobileNavigation() {
                 <MobileNavLink href="#training">
                   Formação Profissional
                 </MobileNavLink>
-                <MobileNavLink href="#contacts">Programa GUAL</MobileNavLink>
+                <MobileNavLink href="#gual">Programa GUAL</MobileNavLink>
                 <MobileNavLink href="#faqs">Happy Mind Labs</MobileNavLink>
                 <MobileNavLink href="#faqs">Blog</MobileNavLink>
                 <MobileNavLink href="#faqs">Contactos</MobileNavLink>
@@ -194,7 +194,7 @@ export function Header() {
               <NavLink href="#Psicologia">Psicologia Clínica</NavLink>
               <NavLink href="#Supervision">Supervisão Clínica</NavLink>
               <NavLink href="#training">Formação Profissional</NavLink>
-              <NavLink href="#contacts">Programa GUAL</NavLink>
+              <NavLink href="#gual">Programa GUAL</NavLink>
               <NavLink href="#faqs">Happy Mind Labs</NavLink>
               <NavLink href="#faqs">Blog</NavLink>
               <NavLink href="#faqs">Contactos</NavLink>

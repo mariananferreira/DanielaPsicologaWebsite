@@ -7,7 +7,7 @@ import OurTeam from '@/components/OurTeam'
 import { Contacts } from '@/components/Contacts'
 import Parceries from '@/components/Parceries'
 import Professional from '@/components/Professional'
-import OurSpace from '@/components/OurSpace'
+import Gual from '@/components/Gual'
 import Intro from '@/components/Intro'
 import Supervision from '@/components/Supervision'
 import Psicologia from '@/components/Psicologia'
@@ -27,6 +27,7 @@ export default function Home() {
         <Psicologia />
         <Supervision/>
         <Professional/>
+        <Gual/>
         
 
       </main>
