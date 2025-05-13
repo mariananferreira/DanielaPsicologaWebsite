@@ -26,10 +26,12 @@ export default function LeadershipProgramSection() {
             <p className="text">
               O GUAL – Grow Up As a Leader é um programa de mentoria individual
               em liderança, desenhado para quem deseja desenvolver-se como líder
-              com consciência, estratégia e autenticidade. Baseado em teorias
-              contemporâneas de inteligência emocional, psicologia do desempenho
-              e liderança consciente, o programa é adaptado ao teu percurso, aos
-              teus desafios e ao teu estilo de liderança.
+              com consciência, estratégia e autenticidade.
+              <br />
+              Baseado em teorias contemporâneas de inteligência emocional,
+              psicologia do desempenho e liderança consciente, o programa é
+              adaptado ao teu percurso, aos teus desafios e ao teu estilo de
+              liderança.
             </p>
           </div>
 

@@ -1,18 +1,16 @@
 import Head from 'next/head'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
-import  Hero  from '@/components/Hero'
+import Hero from '@/components/Hero'
 import { AboutMe } from '@/components/AboutMe'
-import OurTeam from '@/components/OurTeam'
+import Blog from '@/components/Blog'
 import { Contacts } from '@/components/Contacts'
-import Parceries from '@/components/Parceries'
+import HappyMind from '@/components/HappyMind'
 import Professional from '@/components/Professional'
 import Gual from '@/components/Gual'
-import Intro from '@/components/Intro'
+import Testimonials from '@/components/Testimonials'
 import Supervision from '@/components/Supervision'
 import Psicologia from '@/components/Psicologia'
-
-
 
 export default function Home() {
   return (
@@ -21,15 +19,17 @@ export default function Home() {
         <title>Daniela Leal, Psicóloga</title>
       </Head>
       <Header />
-      <main className='primaryBack'>
+      <main className="primaryBack">
         <Hero />
         <AboutMe />
         <Psicologia />
-        <Supervision/>
-        <Professional/>
-        <Gual/>
-        
-
+        <Supervision />
+        <Professional />
+        <Gual />
+        <HappyMind />
+        <Testimonials />
+        <Blog />
+        <Contacts />
       </main>
       <Footer />
     </>

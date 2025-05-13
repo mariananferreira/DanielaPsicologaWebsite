@@ -159,9 +159,9 @@ function MobileNavigation() {
                   Formação Profissional
                 </MobileNavLink>
                 <MobileNavLink href="#gual">Programa GUAL</MobileNavLink>
-                <MobileNavLink href="#faqs">Happy Mind Labs</MobileNavLink>
-                <MobileNavLink href="#faqs">Blog</MobileNavLink>
-                <MobileNavLink href="#faqs">Contactos</MobileNavLink>
+                <MobileNavLink href="#happy-mind-labs">Happy Mind Labs</MobileNavLink>
+                <MobileNavLink href="#Blog">Blog</MobileNavLink>
+                <MobileNavLink href="#Contactos">Contactos</MobileNavLink>
               </Popover.Panel>
             </Transition.Child>
           </Transition.Root>
@@ -222,9 +222,9 @@ export function Header() {
               <NavLink href="#Supervision">Supervisão Clínica</NavLink>
               <NavLink href="#training">Formação Profissional</NavLink>
               <NavLink href="#gual">Programa GUAL</NavLink>
-              <NavLink href="#faqs">Happy Mind Labs</NavLink>
-              <NavLink href="#faqs">Blog</NavLink>
-              <NavLink href="#faqs">Contactos</NavLink>
+              <NavLink href="#happy-mind-labs">Happy Mind Labs</NavLink>
+              <NavLink href="#Blog">Blog</NavLink>
+              <NavLink href="#Contactos">Contactos</NavLink>
             </nav>
           </div>
         </Container>
