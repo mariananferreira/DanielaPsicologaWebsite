@@ -88,7 +88,7 @@ export default function ClinicalSupervisionSection() {
         {/* CTA */}
         <div className="mt-16 text-center">
           <a
-            href="#contacts"
+            href="#Contactos"
             className="inline-flex items-center justify-center rounded-md bg-[#b45f42] px-8 py-4 text-lg font-semibold text-white shadow-md transition duration-200 hover:bg-[#944936]"
           >
             Agendar Sessão de Supervisão
