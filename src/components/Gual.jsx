@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { Check } from 'lucide-react'
 import { Container } from '@/components/Container'
-import gualPhoto from '@/images/lider.jpg' // coloca aqui a tua imagem local
+import gualPhoto from '@/images/lider.png' // coloca aqui a tua imagem local
 
 export default function LeadershipProgramSection() {
   return (
