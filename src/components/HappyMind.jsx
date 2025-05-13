@@ -54,7 +54,7 @@ export default function HappyMindLabsSection() {
             <Image
               src={happyMindImage}
               alt="Happy Mind Labs - DEI e Bem-estar"
-              className="w-full max-w-sm rounded-2xl object-cover shadow-md"
+              className="w-full max-w-xs object-cover"
               priority
             />
           </div>
@@ -147,12 +147,13 @@ export default function HappyMindLabsSection() {
           <div className="pointer-events-none absolute inset-0 bg-[url('/textures/soft-pattern.png')] bg-cover bg-center opacity-10"></div>
 
           <h2 className="sectionSubTitles font-extraboldmd:text-4xl mb-4 text-3xl">
-            Vamos criar ambientes de trabalho onde ninguém precisa se encolher
+            Vamos criar ambientes de trabalho onde ninguém precisa encolher-se
             para caber
           </h2>
           <p className="text mb-8 text-lg text-gray-700">
-            Quer desenhar um plano de DEI + saúde mental feito à medida da sua
-            empresa? Marque uma reunião de diagnóstico sem compromisso.
+            Quer desenhar um plano de DEI e saúde mental organizacional feito à
+            medida da sua empresa? Marque uma reunião de diagnóstico sem
+            compromisso.
           </p>
           <div className="flex justify-center">
             <a

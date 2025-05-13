@@ -18,12 +18,13 @@ export default function LeadershipProgramSection() {
         </div>
 
         {/* Descrição + imagem */}
-        <div className="mb-16 grid items-start gap-10 md:grid-cols-2">
-          <div className="space-y-6">
+        <div className="mb-16 grid items-center gap-10 md:grid-cols-2">
+          <div className="mx-auto max-w-prose space-y-6">
             <p className="text">
               O GUAL – Grow Up As a Leader é um programa de mentoria individual
               em liderança, desenhado para quem deseja desenvolver-se como líder
               com consciência, estratégia e autenticidade.
+              <br />
               <br />
               Baseado em teorias contemporâneas de inteligência emocional,
               psicologia do desempenho e liderança consciente, o programa é
@@ -36,7 +37,7 @@ export default function LeadershipProgramSection() {
             <Image
               src={gualPhoto}
               alt="Mentora do Programa GUAL"
-              className="w-full max-w-xs rounded-xl object-cover shadow-lg"
+              className="w-full max-w-xs object-cover"
               priority
             />
           </div>

@@ -70,6 +70,7 @@ export default function ProfessionalTrainingSection() {
                 { icon: Building2, label: 'Formações autónomas' },
                 { icon: Users, label: 'Gestão de equipas' },
                 { icon: Users2, label: 'Diversidade e Inclusão' },
+                { icon: Briefcase, label: 'Consultoria' },
               ].map(({ icon: Icon, label }) => (
                 <div
                   key={label}
@@ -136,7 +137,7 @@ export default function ProfessionalTrainingSection() {
               },
               {
                 title: 'LGBTQI+: Da Construção da Identidade à Inclusão Social',
-                shortDescription: 'Ação de sensibilização | Duração: 1h',
+                shortDescription: 'Ação de sensibilização | Duração: 1h30',
                 details: [
                   'Conceitos introdutórios: orientação sexual, identidade de género, expressão de género, sexo;',
                   'As dimensões da identidade sexual;',
@@ -146,7 +147,7 @@ export default function ProfessionalTrainingSection() {
               },
               {
                 title: 'Inclusão da Comunidade LGBTQI+ no Local de Trabalho',
-                shortDescription: 'Ação de sensibilização | Duração: 1h',
+                shortDescription: 'Ação de sensibilização | Duração: 1h30',
                 details: [
                   'Realidade LGBTQI+ no trabalho;',
                   'Importância da inclusão organizacional;',
@@ -156,7 +157,7 @@ export default function ProfessionalTrainingSection() {
               },
               {
                 title: 'A Comunicação Inclusiva no Local de Trabalho',
-                shortDescription: 'Ação de sensibilização | Duração: 1h',
+                shortDescription: 'Ação de sensibilização | Duração: 1h30',
                 details: [
                   'Definição de linguagem inclusiva;',
                   'Conceitos sobre género, identidade, etnia, deficiência e neurodivergência;',
@@ -166,7 +167,7 @@ export default function ProfessionalTrainingSection() {
               },
               {
                 title: 'Género: Da Igualdade à Equidade',
-                shortDescription: 'Ação de sensibilização | Duração: 1h',
+                shortDescription: 'Ação de sensibilização | Duração: 1h30',
                 details: [
                   'Definições de género, igualdade e equidade;',
                   'Viés inconsciente e construções sociais de género;',
@@ -177,7 +178,7 @@ export default function ProfessionalTrainingSection() {
               {
                 title:
                   'Neurodiversidade: A Inclusão que Potencia o Corporativo',
-                shortDescription: 'Ação de sensibilização | Duração: 1h',
+                shortDescription: 'Ação de sensibilização | Duração: 1h30',
                 details: [
                   'Definição de neurodiversidade e neurodivergência;',
                   'Diagnóstico, necessidades e especificidades;',
