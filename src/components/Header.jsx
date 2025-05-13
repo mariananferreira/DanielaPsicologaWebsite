@@ -4,10 +4,11 @@ import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 import { Container } from '@/components/Container'
 import { NavLink } from '@/components/NavLink'
-import { ClockIcon, EnvelopeIcon } from '@heroicons/react/24/outline'
+import { PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/outline'
+import { FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 // Componente para o TopBar
-function TopBar() {
+export default function TopBar() {
   const [isVisible, setIsVisible] = useState(true)
 
   const handleScroll = () => {
@@ -25,12 +26,16 @@ function TopBar() {
         isVisible ? 'translate-y-0' : '-translate-y-full'
       } hidden sm:flex`}
     >
-      <div className="mx-auto flex w-full max-w-screen-xl items-center justify-end">
-        {/* Horário com ícone de relógio */}
+      <div className="mx-auto flex w-full max-w-screen-xl items-center justify-end space-x-6">
+        {/* Telefone */}
+        <div className="flex items-center space-x-2">
+          <PhoneIcon className="h-5 w-5 text-slate-700" />
+          <a href="tel:+351918275236" className="hover:underline">
+            +351 918 275 236
+          </a>
+        </div>
 
-        {/* Espaçamento entre os itens */}
-        <div className="w-4"></div>
-        {/* Email com ícone de envelope */}
+        {/* Email */}
         <div className="flex items-center space-x-2">
           <EnvelopeIcon className="h-5 w-5 text-slate-700" />
           <a
@@ -38,6 +43,28 @@ function TopBar() {
             className="hover:underline"
           >
             danielaleal.psic@gmail.com
+          </a>
+        </div>
+
+        {/* Redes sociais */}
+        <div className="flex items-center space-x-4 text-slate-700">
+          <a
+            href="https://www.instagram.com/danielaleal.psicologia/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-[#C13584]"
+            aria-label="Instagram"
+          >
+            <FaInstagram className="h-5 w-5" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/daniela-leal-ela-she-ab599a131/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-[#0077B5]"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedin className="h-5 w-5" />
           </a>
         </div>
       </div>

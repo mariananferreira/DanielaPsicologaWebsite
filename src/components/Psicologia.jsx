@@ -1,5 +1,12 @@
-import { CheckCircle, Laptop, MapPin } from 'lucide-react'
-import { HeartHandshake, Brain, Users } from 'lucide-react'
+import {
+  CheckCircle,
+  Laptop,
+  MapPin,
+  Brain,
+  Users,
+  Puzzle,
+  BookOpen,
+} from 'lucide-react'
 
 import { Container } from '@/components/Container'
 import Image from 'next/image'
@@ -22,14 +29,6 @@ export default function PsychologySection() {
             <p className="text mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
               Consultas de Psicologia Clínica no Distrito do Porto e Online
             </p>
-            <div className="mt-8 flex justify-center">
-              <a
-                href="#contacts"
-                className="inline-flex items-center justify-center rounded-md bg-[#F9F5F2] px-6 py-3 text-base font-medium text-gray-900 transition duration-200 hover:bg-[#ebbaa2]"
-              >
-                Agendar Consulta
-              </a>
-            </div>
           </div>
 
           {/* Sobre Mim */}
@@ -39,14 +38,19 @@ export default function PsychologySection() {
                 Psicóloga Clínica (cédula OPP nº 22983)
               </h2>
               <p className="text mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
-                Reconhecida como Especialista em Psicologia Clínica e da Saúde,
-                trabalho com adolescentes e adultos na Maia (Porto) e online.
-                <br /> Ofereço um espaço seguro e inclusivo, onde todas as
-                identidades são bem-vindas, onde as emoções são celebradas e os
-                impactos sociais na saúde mental nunca são esquecidos. A
-                consulta de psicologia não é só para quando há “algo errado”. É
-                um lugar seguro e confidencial onde aprendes a cuidar de ti,
-                compreender-te, encontrar clareza e reencontrar sentido.
+                Sou Especialista em Psicologia Clínica e da Saúde, e acompanho
+                adolescentes e adultos em consultas presenciais na Maia (Porto)
+                ou online.
+                <br />
+                <br />
+                Ofereço um espaço seguro, inclusivo e respeitador de todas as
+                identidades — onde as emoções são acolhidas e os contextos
+                sociais não são esquecidos.
+                <br />
+                <br />A psicologia não existe apenas para quando “algo está
+                errado”. É um lugar de escuta e transformação, onde podes
+                aprender a cuidar de ti, compreender-te com mais clareza e
+                reencontrar sentido.
               </p>
             </div>
 
@@ -60,14 +64,21 @@ export default function PsychologySection() {
 
           {/* Abordagem */}
           <div className="mb-16 text-center">
-            <h2 className=" sectionSubTitles mb-6 text-2xl font-semibold">
+            <h2 className="sectionSubTitles mb-6 text-2xl font-semibold">
               A minha abordagem
             </h2>
-            <div className="grid gap-6 md:grid-cols-3">
-              {/* Psicoterapeuta */}
+
+            <div className="grid gap-6 md:grid-cols-4">
+              {/* Construtivista */}
               <div className="flex flex-col items-center rounded-xl bg-white p-6 shadow-md">
-                <HeartHandshake size={36} className="mb-4 text-[#ebbaa2]" />
-                <p className="font-semibold"></p>
+                <Puzzle size={36} className="mb-4 text-[#ebbaa2]" />
+                <p className="font-semibold">Construtivista</p>
+              </div>
+
+              {/* Narrativa */}
+              <div className="flex flex-col items-center rounded-xl bg-white p-6 shadow-md">
+                <BookOpen size={36} className="mb-4 text-[#ebbaa2]" />
+                <p className="font-semibold">Narrativa</p>
               </div>
 
               {/* Cognitivo-Comportamental */}
@@ -82,6 +93,7 @@ export default function PsychologySection() {
                 <p className="font-semibold">Sistémica</p>
               </div>
             </div>
+
             <p className="mt-4 text-sm text-gray-600">
               Conjugo a evidência científica com a relação terapêutica para uma
               intervenção personalizada.
@@ -93,23 +105,26 @@ export default function PsychologySection() {
             <h2 className=" sectionSubTitles mb-6 text-center text-2xl font-semibold">
               Áreas de intervenção
             </h2>
-            <div className="text grid gap-6 md:grid-cols-2">
+            <div className="text grid gap-4 md:grid-cols-2">
               {[
-                'Depressão e ideação suicida',
-                'Stress, burnout e esgotamento',
-                'Neurodivergência (PHDA, Autismo)',
+                'Desenvolvimento pessoal',
                 'Luto e perdas significativas',
-
+                'Depressão, sintomas depressivos e ideação suicida',
+                'Stress, burnout e esgotamento profissional',
+                'Neurodivergência na adolescência e adultez (PHDA, Autismo)',
+                'Conflitos familiares e relacionamentos interpessoais',
                 'Autoestima, autoconhecimento e desenvolvimento pessoal',
                 'Acompanhamento psicológico afirmativo para pessoas LGBTQIA+',
-                'Conflitos familiares e relacionamentos interpessoais',
-                'Perturbações da personalidade',
-                'Perturbações de ansiedade (fobias, pânico, ansiedade generalizada, agorafobia, POC)',
                 'Identidade e transições de vida (divórcio, casamento, maternidade, parentalidade)',
+                'Perturbações de ansiedade (fobias, pânico, ansiedade generalizada, agorafobia, POC)',
+                'Perturbações da personalidade (bipolar, borderline, histriónica, paranoide, esquizoide, esquizotípica)',
               ].map((item) => (
-                <p key={item} className="flex items-start gap-2">
-                  <CheckCircle size={20} className="mt-1 text-green-600" />
-                  {item}
+                <p key={item} className="flex items-start gap-2 text-left">
+                  <CheckCircle
+                    size={18}
+                    className="mt-1 shrink-0 text-green-600"
+                  />
+                  <span>{item}</span>
                 </p>
               ))}
             </div>

@@ -52,7 +52,7 @@ export default function HeroSection() {
               href="#contacts"
               className="inline-flex items-center justify-center rounded-md bg-[#F9F5F2] px-6 py-3 text-base font-medium text-gray-900 transition duration-200 hover:bg-[#ebbaa2]"
             >
-              Agendar Consulta
+              Agendar
             </a>
           </div>
         </div>
