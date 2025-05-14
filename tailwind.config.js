@@ -36,4 +36,14 @@ module.exports = {
     require('@tailwindcss/forms'), 
     require('@tailwindcss/aspect-ratio')
   ],
+
+
+  theme: {
+    extend: {
+      fontFamily: {
+        script: ['"Dancing Script"', 'cursive'],
+      },
+    },
+  }
+  
 }

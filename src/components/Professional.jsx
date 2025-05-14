@@ -268,7 +268,7 @@ export default function ProfessionalTrainingSection() {
           <div className="flex justify-center">
             <a
               href="#Contactos"
-              className="inline-flex items-center justify-center rounded-md bg-[#ebbaa2] px-8 py-4 text-lg font-semibold text-white shadow-md transition duration-200 hover:bg-[#d29e8b]"
+              className="inline-block w-fit rounded-full border border-[#b45f42] bg-[#fff] px-4 py-2 text-slg font-medium text-[#3B3B3B] transition-colors hover:border-[#b45f42] hover:bg-[#b45f42] hover:text-white"
             >
               Contactar para Formação
             </a>

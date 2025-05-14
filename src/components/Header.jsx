@@ -159,7 +159,9 @@ function MobileNavigation() {
                   Formação Profissional
                 </MobileNavLink>
                 <MobileNavLink href="#gual">Programa GUAL</MobileNavLink>
-                <MobileNavLink href="#happy-mind-labs">Happy Mind Labs</MobileNavLink>
+                <MobileNavLink href="#happy-mind-labs">
+                  Happy Mind Labs
+                </MobileNavLink>
                 <MobileNavLink href="#Blog">Blog</MobileNavLink>
                 <MobileNavLink href="#Contactos">Contactos</MobileNavLink>
               </Popover.Panel>
@@ -211,8 +213,9 @@ export function Header() {
         <Container>
           <div className="flex items-center justify-between">
             <Link href="/" aria-label="Home">
-              <p>Daniela Leal</p>
+              <p className="font-script text-base">Daniela Leal</p>
             </Link>
+
             <div className="lg:hidden">
               <MobileNavigation />
             </div>

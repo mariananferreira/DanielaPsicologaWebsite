@@ -134,10 +134,10 @@ export function Contacts() {
                 className="w-full rounded-md border-gray-300 px-4 py-3 shadow-sm"
               />
             </div>
-            <div className="text-right">
+            <div className="text-center">
               <button
                 type="submit"
-                className="inline-flex items-center justify-center rounded-md bg-[#ebbaa2] px-6 py-3 font-semibold text-white shadow-md hover:bg-[#d29e8b]"
+                className="inline-block w-fit rounded-full border border-[#b45f42] bg-[#fff] px-4 py-2 text-slg font-medium text-[#3B3B3B] transition-colors hover:border-[#b45f42] hover:bg-[#b45f42] hover:text-white"
               >
                 Enviar
               </button>
