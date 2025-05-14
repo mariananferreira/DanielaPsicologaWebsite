@@ -11,7 +11,7 @@ export function AboutMe() {
           </h2>
         </div>
 
-        <div className="text mx-auto max-w-4xl space-y-4 px-6 text-center leading-relaxed">
+        <div className="text mx-auto max-w-4xl space-y-3 px-6 text-center leading-relaxed">
           <p>
             Prazer, sou a Daniela Leal e trabalho para construir um mundo mais
             empático, equitativo e feliz.
@@ -51,7 +51,7 @@ export function AboutMe() {
             não podem ser separadas.
           </p>
 
-          <blockquote className="text text-base italic">
+          <blockquote className="text italic">
             “A saúde mental é também um ato de resistência e esperança.”
           </blockquote>
 

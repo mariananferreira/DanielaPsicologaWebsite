@@ -122,7 +122,7 @@ export default function PsychologySection() {
                 <p key={item} className="flex items-start gap-2 text-left">
                   <CheckCircle
                     size={18}
-                    className="mt-1 shrink-0 text-green-600"
+                    className="mt-1 shrink-0 text-[#b45f42]"
                   />
                   <span>{item}</span>
                 </p>

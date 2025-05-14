@@ -1,62 +1,48 @@
-import { useState, useEffect } from 'react'
 import Image from 'next/image'
-import heroImage from '@/images/banner2.png' // Usa a mesma imagem para simplificar
+import daniela from '@/images/daniela.png'
 
 export default function HeroSection() {
-  const [backgroundImage, setBackgroundImage] = useState(heroImage)
-
-  useEffect(() => {
-    const handleResize = () => {
-      setBackgroundImage(heroImage) // Pode adaptar para múltiplas imagens se quiser
-    }
-
-    handleResize()
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
-
   return (
-    <div className="relative bg-gray-900 px-6 py-32 sm:px-12 sm:py-40 lg:px-16">
-      {/* Imagem de fundo responsiva */}
-      <div className="absolute inset-0 overflow-hidden">
-        <Image
-          src={backgroundImage}
-          alt="Hero image background"
-          className="h-full w-full object-cover object-left opacity-90"
-          priority
-          layout="fill"
-        />
-      </div>
+    <section className="w-full bg-[#F9F5F2] py-8">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 bg-white shadow-sm md:grid-cols-2">
+        {/* Lado esquerdo - texto */}
+        <div className="relative bg-white pb-[60px] pl-[60px]">
+          <div className="mt-6 flex flex-col justify-center bg-[#F9F5F2] p-10 md:p-16">
+            <h1 className="mb-2 text-4xl font-extrabold leading-snug tracking-tight text-[#3B3B3B] sm:text-5xl">
+              Daniela Leal, PhD
+            </h1>
+            <p className="mb-6 text-base font-medium text-[#3B3B3B]/80 sm:text-lg">
+              Psicóloga · Investigadora · Formadora · Consultora DEI
+            </p>
 
-      <div aria-hidden="true" className="absolute inset-0 bg-gray-900 bg-opacity-10" />
+            <p className="mb-4 text-lg text-[#3B3B3B] sm:text-xl">
+              Onde a ciência encontra a <span className="italic">empatia</span>,
+              <br />e cada pessoa a sua liberdade de ser.
+            </p>
 
-      {/* Conteúdo Principal */}
-      <div className="relative z-10 mx-auto max-w-7xl px-6 pt-32 text-white sm:pt-40 lg:px-8">
-        <div className="ml-auto max-w-md text-center md:text-right lg:max-w-lg">
-          <p className="text-base font-medium uppercase tracking-wide text-white mb-2">
-            DANIELA LEAL, PhD., Psicóloga, Investigadora, Formadora e Consultora DEI
-          </p>
-
-          <h1 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-5xl italic">
-            Onde a ciência encontra a <span className="not-italic">empatia</span>,<br />
-            e cada pessoa a sua liberdade de ser.
-          </h1>
-
-          <p className="mt-6 text-lg md:text-xl lg:text-2xl text-white/90">
-            Trabalho com pessoas e organizações para promover vidas com mais
-            consciência, liberdade e saúde mental.
-          </p>
-
-          <div className="mt-8 flex justify-center md:justify-end">
+            <p className="mb-8 text-base text-[#3B3B3B]/70 sm:text-lg">
+              Trabalho com pessoas e organizações para promover vidas com mais
+              consciência, liberdade e saúde mental.
+            </p>
             <a
               href="#Contactos"
-              className="inline-flex items-center justify-center rounded-md bg-[#F9F5F2] px-6 py-3 text-base font-medium text-gray-900 transition duration-200 hover:bg-[#ebbaa2]"
+              className="inline-block w-fit rounded-full bg-[#FFCDB2] px-4 py-2 text-sm font-medium text-[#3B3B3B] transition-colors hover:bg-[#fcbfa1]"
             >
               Agendar
             </a>
           </div>
         </div>
+
+        {/* Lado direito - imagem */}
+        <div className="relative flex items-end justify-center bg-white pt-10">
+          <Image
+            src={daniela}
+            alt="Daniela Leal"
+            className="h-[83vh] w-auto object-contain"
+            priority
+          />
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
