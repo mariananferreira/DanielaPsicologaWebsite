@@ -12,7 +12,9 @@ import {
   Clock,
   Layers,
   CheckCircle,
-  Handshake
+  Handshake,
+  FileText,
+  User
 } from 'lucide-react'
 import Image from 'next/image'
 import { ExpandableCourseCard } from '@/components/ExpandableCourse'
@@ -114,7 +116,7 @@ export default function ProfessionalTrainingSection() {
         </div>
 
         {/* Modalidades disponíveis */}
-        <div className="mb-16">
+<div className="mb-16">
   <h3 className="mb-4 text-xl font-semibold text-[#7c3e2f]">
     Modalidades de formação:
   </h3>
@@ -134,7 +136,16 @@ export default function ProfessionalTrainingSection() {
       },
       {
         icon: CheckCircle,
-        label: 'Cursos acreditados (em parceria com entidades formadoras reconhecidas)',
+        label:
+          'Cursos acreditados (em parceria com entidades formadoras reconhecidas)',
+      },
+      {
+        icon: FileText, // Ou outro ícone adequado
+        label: 'Desenho de formação à medida',
+      },
+      {
+        icon: User, // Ou outro ícone que represente mentoria
+        label: 'Mentoria de desenvolvimento pessoal',
       },
     ].map(({ icon: Icon, label }) => (
       <div
@@ -148,6 +159,7 @@ export default function ProfessionalTrainingSection() {
   </div>
 </div>
 
+
         {/* Todos os Cursos */}
         <div className="mb-20">
           <h3 className="mb-6 text-xl font-semibold text-[#7c3e2f]">
@@ -160,8 +172,7 @@ export default function ProfessionalTrainingSection() {
                 url: 'https://www.inspsic.pt/curso/1-psicologos/325',
               },
               {
-                title:
-                  'Intervenção Psicossocial Afirmativa LGBTQIA+',
+                title: 'Intervenção Psicossocial Afirmativa LGBTQIA+',
                 url: 'https://www.inspsic.pt/curso/1-psicologos/301-especializacao-avancada-pos-universitaria-em-intervencao-psicossocial-afirmativa-com-pessoas-lgbtq-advanced-professional-program',
               },
               {
@@ -297,7 +308,7 @@ export default function ProfessionalTrainingSection() {
           <div className="flex justify-center">
             <a
               href="#Contactos"
-              className="inline-block w-fit rounded-full border border-[#b45f42] bg-[#fff] px-4 py-2 text-slg font-medium text-[#3B3B3B] transition-colors hover:border-[#b45f42] hover:bg-[#b45f42] hover:text-white"
+              className="text-slg inline-block w-fit rounded-full border border-[#b45f42] bg-[#fff] px-4 py-2 font-medium text-[#3B3B3B] transition-colors hover:border-[#b45f42] hover:bg-[#b45f42] hover:text-white"
             >
               Contactar para Formação
             </a>
