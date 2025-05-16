@@ -8,6 +8,10 @@ import {
   Lightbulb,
   Network,
   Users2,
+  Laptop,
+  Clock,
+  Layers,
+  CheckCircle,
   Handshake
 } from 'lucide-react'
 import Image from 'next/image'
@@ -109,16 +113,41 @@ export default function ProfessionalTrainingSection() {
           </div>
         </div>
 
-        {/* Formatos */}
-        <div className="mb-12 space-y-2 text-gray-800">
-          <p>• Formatos presenciais ou online</p>
-          <p>• Workshops de curta duração (2h a 6h)</p>
-          <p>• Formações modulares (15h a 50h)</p>
-          <p>
-            • Cursos acreditados (em parceria com entidades formadoras
-            reconhecidas)
-          </p>
-        </div>
+        {/* Modalidades disponíveis */}
+        <div className="mb-16">
+  <h3 className="mb-4 text-xl font-semibold text-[#7c3e2f]">
+    Modalidades de formação:
+  </h3>
+  <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+    {[
+      {
+        icon: Laptop,
+        label: 'Formatos presenciais ou online',
+      },
+      {
+        icon: Clock,
+        label: 'Workshops de curta duração (2h a 6h)',
+      },
+      {
+        icon: Layers,
+        label: 'Formações modulares (15h a 50h)',
+      },
+      {
+        icon: CheckCircle,
+        label: 'Cursos acreditados (em parceria com entidades formadoras reconhecidas)',
+      },
+    ].map(({ icon: Icon, label }) => (
+      <div
+        key={label}
+        className="flex items-center gap-3 rounded-lg border border-[#eee] bg-[#fefcf9] p-3"
+      >
+        <Icon className="text-[#7c3e2f]" size={22} />
+        <span>{label}</span>
+      </div>
+    ))}
+  </div>
+</div>
+
         {/* Todos os Cursos */}
         <div className="mb-20">
           <h3 className="mb-6 text-xl font-semibold text-[#7c3e2f]">

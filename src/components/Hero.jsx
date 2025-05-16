@@ -4,34 +4,39 @@ import daniela from '@/images/daniela.png'
 export default function HeroSection() {
   return (
     <section className="w-full bg-[#F9F5F2] py-8">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 bg-white shadow-sm md:grid-cols-2">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 shadow-sm md:grid-cols-2">
         {/* Lado esquerdo - texto */}
-        <div className="relative bg-white px-6 py-10 sm:px-10 md:px-14 md:py-16">
+        <div className="relative px-6 py-10 sm:px-12 md:px-20 md:py-16">
           <div className="flex flex-col justify-center bg-[#F9F5F2] p-6 sm:p-10 md:p-12">
-            <h1 className="mb-2 font-script text-3xl font-extrabold leading-snug tracking-tight text-[#3B3B3B] sm:text-4xl md:text-5xl">
-              Daniela Leal,
+            <h1 className="font-poppins mb-2 w-full whitespace-nowrap text-[clamp(2rem,6vw,4.5rem)] font-extrabold uppercase leading-snug tracking-wide text-[#dac6bb]">
+              Daniela Leal
             </h1>
 
-            <p className="mb-6 text-sm font-medium text-[#3B3B3B]/80 sm:text-base md:text-lg">
-              Psicóloga · Investigadora · Formadora · Consultora DEI
+            <p className="font-montserrat mb-1 w-full whitespace-nowrap text-sm uppercase tracking-wider text-[#3B3B3B]/80 sm:text-base md:text-lg">
+              Psicóloga · Investigadora · Formadora
+            </p>
+            <p className="font-montserrat w-full whitespace-nowrap text-sm uppercase tracking-wider text-[#3B3B3B]/80 sm:text-base md:text-lg">
+              Consultora em Diversidade, Equidade e Inclusão
             </p>
 
-            <p className="mb-4 text-base text-[#3B3B3B] sm:text-lg md:text-xl">
-              Onde a ciência encontra a <span className="italic">empatia</span>,
-              <br />e cada pessoa a sua liberdade de ser.
+            <p className="mt-8 mb-6 text-justify text-lg italic leading-relaxed tracking-normal text-[#7c3e2f]">
+              Onde a ciência encontra a{' '}
+              <span className="font-medium not-italic">empatia</span>, e cada
+              pessoa a sua liberdade de ser.
             </p>
 
-            <p className="mb-8 text-sm text-[#3B3B3B]/70 sm:text-base md:text-lg">
+            <p className="text-base font-light leading-relaxed tracking-widest text-gray-500">
               Trabalho com pessoas e organizações para promover vidas com mais
               consciência, liberdade e saúde mental.
             </p>
 
             <a
-              href="#Contactos"
-              className="inline-block w-fit rounded-full border border-[#b45f42] bg-[#fff] px-4 py-2 text-sm font-medium text-[#3B3B3B] transition-colors hover:border-[#b45f42] hover:bg-[#b45f42] hover:text-white"
-            >
-              Agendar
-            </a>
+  href="#Contactos"
+  className="mt-8 inline-block w-fit rounded-full border border-[#b45f42] bg-[#fff] px-4 py-2 text-sm font-medium text-[#3B3B3B] transition-colors hover:border-[#b45f42] hover:bg-[#b45f42] hover:text-white"
+>
+  Agendar
+</a>
+
           </div>
         </div>
 
@@ -41,7 +46,7 @@ export default function HeroSection() {
           <Image
             src={daniela}
             alt="Daniela Leal"
-            className="h-[55vh] w-auto object-contain sm:h-[65vh] md:h-[75vh] lg:h-[80vh]"
+            className="h-[35vh] w-auto object-contain sm:h-[45vh] md:h-[60vh] lg:h-[70vh]"
             priority
           />
         </div>

@@ -213,7 +213,7 @@ export function Header() {
         <Container>
           <div className="flex items-center justify-between">
             <Link href="/" aria-label="Home">
-              <p className="font-script text-base">Daniela Leal</p>
+              <p className=" text-base">Daniela Leal</p>
             </Link>
 
             <div className="lg:hidden">
