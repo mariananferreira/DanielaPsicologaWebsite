@@ -93,32 +93,30 @@ export default function BlogSection() {
           ))}
         </div>
 
-        {/* Secção de Divulgação */}
-        <div className="mt-20 text-center">
-          <h3 className="sectionSubTitles mb-6 text-2xl">
-            Material de Divulgação
-          </h3>
-          <p className="text mb-8 text-gray-600">
-            Conteúdos visuais criados para sensibilização e partilha. Usa,
-            partilha, inspira.
-          </p>
-          <div className="grid gap-6 md:grid-cols-2">
-            <div className="overflow-hidden rounded-xl shadow-md">
-              <Image
-                src={material1}
-                alt="Material de divulgação 1"
-                className="h-auto w-full object-cover"
-              />
-            </div>
-            <div className="overflow-hidden rounded-xl shadow-md">
-              <Image
-                src={material2}
-                alt="Material de divulgação 2"
-                className="h-auto w-full object-cover"
-              />
-            </div>
-          </div>
-        </div>
+{/* Secção de Divulgação */}
+<div className="mt-20 text-center">
+  <h3 className="sectionSubTitles mb-6 text-2xl">Material de Divulgação</h3>
+  <p className="text mb-8 text-gray-600">
+    Conteúdos visuais criados para sensibilização e partilha. Usa, partilha, inspira.
+  </p>
+  <div className="grid gap-6 md:grid-cols-2 justify-items-center">
+    <div className="w-full max-w-sm md:max-w-xs lg:max-w-sm aspect-[3/4] overflow-hidden rounded-xl shadow-md">
+      <Image
+        src={material1}
+        alt="Material de divulgação 1"
+        className="w-full h-full object-contain"
+      />
+    </div>
+    <div className="w-full max-w-sm md:max-w-xs lg:max-w-sm aspect-[3/4] overflow-hidden rounded-xl shadow-md">
+      <Image
+        src={material2}
+        alt="Material de divulgação 2"
+        className="w-full h-full object-contain"
+      />
+    </div>
+  </div>
+</div>
+
 
         {/* Ligações externas */}
         <div className="mt-16">
