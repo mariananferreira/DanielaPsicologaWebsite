@@ -71,7 +71,7 @@ export default function BlogSection() {
                   className="flex w-full items-center justify-between text-left"
                 >
                   <div>
-                    <h3 className="text-xl font-semibold text-[#7c3e2f]">
+                    <h3 className="text-xl text-[#7c3e2f]">
                       {post.title}
                     </h3>
                     <p className="mt-1 text-sm text-gray-600">{post.summary}</p>
