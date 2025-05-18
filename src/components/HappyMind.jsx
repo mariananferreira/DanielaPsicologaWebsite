@@ -21,10 +21,10 @@ export default function HappyMindLabsSection() {
 
         {/* Header */}
         <div className="mb-12 text-center">
-          <h2 className="sectionTitles mb-2 text-3xl font-bold text-[#7c3e2f]">
+          <h2 className="sectionTitles text-3xl tracking-tight sm:text-3xl">
             Happy Mind Labs
           </h2>
-          <p className="text-lg text-[#5a4238]">
+          <p className="text text-lg">
             Bem-estar, Diversidade e Inclusão nas Organizações
           </p>
         </div>
@@ -62,8 +62,8 @@ export default function HappyMindLabsSection() {
 
         {/* 4 Pilares */}
         <div className="mb-20">
-          <h3 className="mb-6 text-center text-2xl font-semibold text-[#7c3e2f]">
-            Os 4 Pilares do Programa
+          <h3 className="sectionSubTitles mb-6 text-2xl">
+            Os 4 Pilares do Programa:
           </h3>
           <div className=" grid gap-6 md:grid-cols-2">
             {[
@@ -112,7 +112,7 @@ export default function HappyMindLabsSection() {
         <div className="mb-20 grid gap-12 md:grid-cols-2">
           {/* Para quem é */}
           <div>
-            <h4 className="mb-4 text-xl font-semibold text-[#7c3e2f]">
+            <h4 className="sectionSubTitles mb-6 text-2xl">
               Para quem é?
             </h4>
             <ul className="text space-y-2 text-sm text-gray-700">
@@ -126,7 +126,7 @@ export default function HappyMindLabsSection() {
 
           {/* Benefícios esperados */}
           <div>
-            <h4 className="mb-4 text-xl font-semibold text-[#7c3e2f]">
+            <h4 className="sectionSubTitles mb-6 text-2xl">
               Benefícios esperados:
             </h4>
             <ul className="text space-y-2 text-sm text-gray-700">
@@ -148,7 +148,7 @@ export default function HappyMindLabsSection() {
 
           <h2 className="sectionSubTitles font-extraboldmd:text-4xl mb-4 text-3xl">
             Vamos criar ambientes de trabalho onde ninguém precisa encolher-se
-            para caber
+            para caber.
           </h2>
           <p className="text mb-8 text-lg text-gray-700">
             Quer desenhar um plano de DEI e saúde mental organizacional feito à

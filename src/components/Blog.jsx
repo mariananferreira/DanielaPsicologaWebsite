@@ -55,7 +55,7 @@ export default function BlogSection() {
 
         {/* Título */}
         <div className="mb-12 text-center">
-          <h2 className="sectionTitles text-3xl font-bold text-[#7c3e2f]">
+          <h2 className="sectionTitles text-3xl tracking-tight sm:text-3xl">
             Blog e Insights
           </h2>
           <p className="text mt-2 text-gray-600">
@@ -110,54 +110,54 @@ export default function BlogSection() {
           ))}
         </div>
         {/* Ligações externas / imprensa */}
-<div className="mt-16">
-  <h3 className="text-lg font-semibold text-[#7c3e2f] mb-4 text-center">
-    Alguns exemplos de contributos na Imprensa
-  </h3>
-  <div className="space-y-2 text-sm text-center text-gray-700">
-    <a
-      href="https://lidermagazine.sapo.pt/nao-deixe-para-amanha-a-inclusao-que-faz-diferenca-hoje/"
-      className="block hover:underline"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      • “Não deixe para amanhã a inclusão que faz diferença hoje” – Lider Magazine
-    </a>
-    <a
-      href="https://www.publico.pt/2019/07/26/p3/cronica/genero-ideologia-oprime-1881249"
-      className="block hover:underline"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      • “Género não é ideologia — é o que oprime” – Público P3
-    </a>
-    <a
-      href="https://portocanal.sapo.pt/um_video/6354746205112"
-      className="block hover:underline"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      • Entrevista – Porto Canal
-    </a>
-    <a
-      href="https://www.publico.pt/2023/05/17/p3/cronica/vai-melhorar-2049457"
-      className="block hover:underline"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      • “Vai melhorar?” – Público P3
-    </a>
-    <a
-      href="https://www.maxima.pt/atual/detalhe/ha-uma-conferencia-de-felicidade-corporativa-a-chegar-ao-porto-eis-o-que-esperar-dela"
-      className="block hover:underline"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      • Conferência sobre Felicidade Corporativa – Máxima
-    </a>
-  </div>
-</div>
-
+        <div className="mt-16">
+          <h3 className="sectionSubTitles mb-6 text-2xl">
+            Alguns exemplos de contributos na Imprensa:
+          </h3>
+          <div className="text space-y-2 text-sm text-gray-700">
+            <a
+              href="https://lidermagazine.sapo.pt/nao-deixe-para-amanha-a-inclusao-que-faz-diferenca-hoje/"
+              className="block hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              • “Não deixe para amanhã a inclusão que faz diferença hoje” –
+              Lider Magazine
+            </a>
+            <a
+              href="https://www.publico.pt/2019/07/26/p3/cronica/genero-ideologia-oprime-1881249"
+              className="block hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              • “Género não é ideologia — é o que oprime” – Público P3
+            </a>
+            <a
+              href="https://portocanal.sapo.pt/um_video/6354746205112"
+              className="block hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              • Entrevista – Porto Canal
+            </a>
+            <a
+              href="https://www.publico.pt/2023/05/17/p3/cronica/vai-melhorar-2049457"
+              className="block hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              • “Vai melhorar?” – Público P3
+            </a>
+            <a
+              href="https://www.maxima.pt/atual/detalhe/ha-uma-conferencia-de-felicidade-corporativa-a-chegar-ao-porto-eis-o-que-esperar-dela"
+              className="block hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              • Conferência sobre Felicidade Corporativa – Máxima
+            </a>
+          </div>
+        </div>
       </Container>
     </section>
   )

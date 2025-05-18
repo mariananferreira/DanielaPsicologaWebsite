@@ -8,7 +8,7 @@ export default function TestimonialsSection() {
         <hr className="mx-auto mb-24 w-3/4 border-t-2 border-[#e8cfc2]" />
 
         <div className="mb-12 text-center">
-          <h2 className="sectionTitles text-3xl font-bold text-[#7c3e2f]">
+          <h2 className="sectionTitles text-3xl tracking-tight sm:text-3xl">
             Palavras que ficam. Histórias que transformam.
           </h2>
         </div>

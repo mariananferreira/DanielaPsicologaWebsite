@@ -14,7 +14,7 @@ import {
   CheckCircle,
   Handshake,
   FileText,
-  User
+  User,
 } from 'lucide-react'
 import Image from 'next/image'
 import { ExpandableCourseCard } from '@/components/ExpandableCourse'
@@ -63,9 +63,7 @@ export default function ProfessionalTrainingSection() {
 
           {/* Texto "Disponível para" */}
           <div className="space-y-6 md:order-1">
-            <h3 className="text-xl font-semibold text-[#7c3e2f]">
-              Disponível para:
-            </h3>
+            <h3 className="sectionSubTitles mb-6 text-2xl">Disponível para:</h3>
             <div className="grid gap-4 sm:grid-cols-2">
               {[
                 { icon: Briefcase, label: 'Colaboração com empresas' },
@@ -92,9 +90,7 @@ export default function ProfessionalTrainingSection() {
 
         {/* Áreas de Formação */}
         <div className="mb-16">
-          <h3 className="mb-4 text-xl font-semibold text-[#7c3e2f]">
-            Áreas de formação:
-          </h3>
+          <h3 className="sectionSubTitles mb-6 text-2xl">Áreas de formação:</h3>
           <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
             {[
               { icon: Heart, label: 'Saúde Mental' },
@@ -116,53 +112,52 @@ export default function ProfessionalTrainingSection() {
         </div>
 
         {/* Modalidades disponíveis */}
-<div className="mb-16">
-  <h3 className="mb-4 text-xl font-semibold text-[#7c3e2f]">
-    Modalidades de formação:
-  </h3>
-  <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-    {[
-      {
-        icon: Laptop,
-        label: 'Formatos presenciais ou online',
-      },
-      {
-        icon: Clock,
-        label: 'Workshops de curta duração (2h a 6h)',
-      },
-      {
-        icon: Layers,
-        label: 'Formações modulares (15h a 50h)',
-      },
-      {
-        icon: CheckCircle,
-        label:
-          'Cursos acreditados (em parceria com entidades formadoras reconhecidas)',
-      },
-      {
-        icon: FileText, // Ou outro ícone adequado
-        label: 'Desenho de formação à medida',
-      },
-      {
-        icon: User, // Ou outro ícone que represente mentoria
-        label: 'Mentoria de desenvolvimento pessoal',
-      },
-    ].map(({ icon: Icon, label }) => (
-      <div
-        key={label}
-        className="flex items-center gap-3 rounded-lg border border-[#eee] bg-[#fefcf9] p-3"
-      >
-        <Icon className="text-[#7c3e2f]" size={22} />
-        <span>{label}</span>
-      </div>
-    ))}
-  </div>
-</div>
-
+        <div className="mb-16">
+          <h3 className="sectionSubTitles mb-6 text-2xl">
+            Modalidades de formação:
+          </h3>
+          <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+            {[
+              {
+                icon: Laptop,
+                label: 'Formatos presenciais ou online',
+              },
+              {
+                icon: Clock,
+                label: 'Workshops de curta duração (2h a 6h)',
+              },
+              {
+                icon: Layers,
+                label: 'Formações modulares (15h a 50h)',
+              },
+              {
+                icon: CheckCircle,
+                label:
+                  'Cursos acreditados (em parceria com entidades formadoras reconhecidas)',
+              },
+              {
+                icon: FileText, // Ou outro ícone adequado
+                label: 'Desenho de formação à medida',
+              },
+              {
+                icon: User, // Ou outro ícone que represente mentoria
+                label: 'Mentoria de desenvolvimento pessoal',
+              },
+            ].map(({ icon: Icon, label }) => (
+              <div
+                key={label}
+                className="flex items-center gap-3 rounded-lg border border-[#eee] bg-[#fefcf9] p-3"
+              >
+                <Icon className="text-[#7c3e2f]" size={22} />
+                <span>{label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
 
         {/* Todos os Cursos */}
         <div className="mb-20">
-          <h3 className="mb-6 text-xl font-semibold text-[#7c3e2f]">
+          <h3 className="sectionSubTitles mb-6 text-2xl">
             Exemplos de Cursos:
           </h3>
           <div className="grid items-start gap-6 md:grid-cols-2">

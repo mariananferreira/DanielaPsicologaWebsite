@@ -17,10 +17,10 @@ export default function ClinicalSupervisionSection() {
         <div className="mb-16 grid items-start gap-10 md:grid-cols-2">
           {/* Texto */}
           <div>
-            <h2 className="sectionSubTitles mb-4 text-3xl font-bold text-[#b45f42]">
+            <h2 className="sectionTitles text-3xl tracking-tight sm:text-3xl">
               Supervisão Clínica
             </h2>
-            <p className="text mb-6 text-lg">
+            <p className="text mb-6 mt-6 text-lg">
               Apoio especializado a psicólogos/as para fortalecer competências,
               refletir sobre prática clínica e promover o autocuidado
               profissional.
@@ -35,7 +35,7 @@ export default function ClinicalSupervisionSection() {
                   <p className="text-sm text-gray-700">
                     Individual (60min)
                     <br />
-                    Grupo (90min, 2–4 participantes)
+                    Grupo (90 min, 2–4 participantes)
                   </p>
                 </div>
               </div>
@@ -64,8 +64,8 @@ export default function ClinicalSupervisionSection() {
 
         {/* Áreas de Foco */}
         <div className="mt-10">
-          <h3 className="mb-6 text-2xl font-semibold text-[#b45f42]">
-            Áreas de Foco:
+          <h3 className="sectionSubTitles mb-6 text-2xl">
+            Áreas de foco:
           </h3>
           <div className="grid gap-6 sm:grid-cols-2">
             {[
@@ -86,10 +86,10 @@ export default function ClinicalSupervisionSection() {
         </div>
 
         {/* CTA */}
-        <div className="mt-16 text-center">
+        <div className="mt-10 flex justify-center">
           <a
             href="#Contactos"
-            className="inline-flex items-center justify-center rounded-md bg-[#b45f42] px-8 py-4 text-lg font-semibold text-white shadow-md transition duration-200 hover:bg-[#944936]"
+            className="text-slg inline-block w-fit rounded-full border border-[#b45f42] bg-[#b45f42] px-4 py-2 font-medium text-[#fff] transition-colors hover:border-[#b45f42] hover:bg-[#fff] hover:text-[#000]"
           >
             Agendar Sessão de Supervisão
           </a>

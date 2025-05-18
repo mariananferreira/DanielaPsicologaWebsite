@@ -34,7 +34,7 @@ export default function PsychologySection() {
           {/* Sobre Mim */}
           <div className="mb-16 grid items-center gap-12 md:grid-cols-2">
             <div>
-              <h2 className="sectionSubTitles text-xl font-semibold">
+              <h2 className="sectionSubTitles mb-6 text-2xl">
                 Psicóloga Clínica (cédula OPP nº 22983)
               </h2>
               <p className="text mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
@@ -64,8 +64,8 @@ export default function PsychologySection() {
 
           {/* Abordagem */}
           <div className="mb-16 text-center">
-            <h2 className="sectionSubTitles mb-6 text-2xl font-semibold">
-              A minha abordagem
+            <h2 className="sectionSubTitles mb-6 text-2xl">
+              A minha abordagem:
             </h2>
 
             <div className="grid gap-6 md:grid-cols-4">
@@ -102,8 +102,8 @@ export default function PsychologySection() {
 
           {/* Áreas de Intervenção */}
           <div className="mb-16">
-            <h2 className=" sectionSubTitles mb-6 text-center text-2xl font-semibold">
-              Áreas de intervenção
+            <h2 className=" sectionSubTitles mb-6 text-center text-2xl">
+              Áreas de intervenção:
             </h2>
             <div className="text grid gap-4 md:grid-cols-2">
               {[

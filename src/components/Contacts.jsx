@@ -5,7 +5,7 @@ import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 import { Container } from '@/components/Container'
-import SM from '@/images/cont.jpg'
+import SM from '@/images/foto2.jpg'
 
 export function Contacts() {
   const [formData, setFormData] = useState({
@@ -59,14 +59,14 @@ export function Contacts() {
         <hr className="mx-auto mb-24 w-3/4 border-t-2 border-[#e8cfc2]" />
 
         <div className="mb-12 text-center">
-          <h2 className="sectionTitles text-3xl font-bold text-[#7c3e2f]">
+          <h2 className="sectionTitles text-3xl tracking-tight sm:text-3xl">
             Aqui, começa a mudança
           </h2>
         </div>
 
         <div className="grid items-start gap-10 md:grid-cols-2">
           {/* Imagem decorativa - opcional, substituível por algo mais abstrato */}
-          <div className="mx-auto max-w-md overflow-hidden rounded-2xl shadow-md md:max-w-full">
+          <div className="mx-auto max-w-md overflow-hidden rounded-xl shadow-md md:max-w-full">
             <Image
               src={SM}
               alt="Espaço terapêutico"
@@ -137,7 +137,7 @@ export function Contacts() {
             <div className="text-center">
               <button
                 type="submit"
-                className="inline-block w-fit rounded-full border border-[#b45f42] bg-[#fff] px-4 py-2 text-slg font-medium text-[#3B3B3B] transition-colors hover:border-[#b45f42] hover:bg-[#b45f42] hover:text-white"
+                className="text-slg inline-block w-fit rounded-full border border-[#b45f42] bg-[#fff] px-4 py-2 font-medium text-[#3B3B3B] transition-colors hover:border-[#b45f42] hover:bg-[#b45f42] hover:text-white"
               >
                 Enviar
               </button>

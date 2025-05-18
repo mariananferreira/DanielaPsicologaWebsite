@@ -46,10 +46,10 @@ export default function LeadershipProgramSection() {
         {/* O que vais trabalhar */}
         <div className="mb-16 grid gap-8 md:grid-cols-2">
           <div className="rounded-xl bg-[#ebbaa2] p-6 text-white shadow-md">
-            <h3 className="mb-4 text-lg font-bold">
+            <h3 className="mb-6 text-2xl">
               O que vais trabalhar neste programa:
             </h3>
-            <ul className="space-y-3">
+            <ul className="text space-y-3">
               {[
                 'Autoconhecimento e identidade como líder',
                 'Resistência mental e autorregulação emocional',
@@ -66,18 +66,19 @@ export default function LeadershipProgramSection() {
 
           {/* Como funciona */}
           <div className="space-y-6">
-            <h3 className="text text-xl font-semibold text-[#7c3e2f]">
+            <h3 className="sectionSubTitles mb-6 mt-6 text-2xl">
               Como funciona o programa GUAL?
             </h3>
-            <ul className="list-inside list-disc space-y-2 text-gray-800">
+            <ul className="text list-inside list-disc space-y-2 text-gray-800">
               <li>Sessões online quinzenais (2 horas cada)</li>
-              <li>
-                Exercícios personalizados, materiais de apoio e reflexões entre
-                sessões
-              </li>
+
               <li>Acompanhamento contínuo e feedback estruturado</li>
               <li>
                 Avaliação final do progresso e definição de próximos passos
+              </li>
+              <li>
+                Exercícios personalizados, materiais de apoio e reflexões entre
+                sessões
               </li>
             </ul>
           </div>
@@ -85,10 +86,10 @@ export default function LeadershipProgramSection() {
 
         {/* A quem se destina */}
         <div className="mb-20">
-          <h3 className="mb-4 text-xl font-semibold text-[#7c3e2f]">
+          <h3 className="sectionSubTitles mb-6 text-2xl">
             A quem se destina esta mentoria?
           </h3>
-          <ul className="list-inside list-disc space-y-2 text-gray-800">
+          <ul className="text list-inside list-disc space-y-2 text-gray-800">
             <li>Líderes formais e informais em início de carreira</li>
             <li>Profissionais em cargos de gestão ou coordenação</li>
             <li>
