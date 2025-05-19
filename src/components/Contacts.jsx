@@ -114,15 +114,24 @@ export function Contacts() {
             </div>
             <div>
               <label className="block text-sm font-medium">Assunto</label>
-              <input
-                type="text"
+              <select
                 name="subject"
                 required
                 value={formData.subject}
                 onChange={handleChange}
                 className="w-full rounded-md border-gray-300 px-4 py-3 shadow-sm"
-              />
+              >
+                <option value="">Selecione um assunto</option>
+                <option value="Agendamento Consulta">
+                  Agendamento Consulta
+                </option>
+                <option value="Supervisão">Supervisão</option>
+                <option value="Pedido formação">Pedido formação</option>
+                <option value="Pedido consultoria">Pedido consultoria</option>
+                <option value="Outros Assuntos">Outros Assuntos</option>
+              </select>
             </div>
+
             <div>
               <label className="block text-sm font-medium">Mensagem</label>
               <textarea
