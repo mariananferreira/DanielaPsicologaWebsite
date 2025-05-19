@@ -102,7 +102,7 @@ export default function ProfessionalTrainingSection() {
             ].map(({ icon: Icon, label }) => (
               <div
                 key={label}
-                className="flex items-center gap-3 rounded-lg border border-[#eee] bg-[#fefcf9] p-3"
+                className="flex items-center gap-3 rounded-lg border border-[#eee] bg-white p-3"
               >
                 <Icon className="text-[#7c3e2f]" size={22} />
                 <span>{label}</span>
@@ -146,7 +146,7 @@ export default function ProfessionalTrainingSection() {
             ].map(({ icon: Icon, label }) => (
               <div
                 key={label}
-                className="flex items-center gap-3 rounded-lg border border-[#eee] bg-[#fefcf9] p-3"
+                className="flex items-center gap-3 rounded-lg border border-[#eee] bg-white p-3"
               >
                 <Icon className="text-[#7c3e2f]" size={22} />
                 <span>{label}</span>
