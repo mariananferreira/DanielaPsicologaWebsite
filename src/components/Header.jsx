@@ -85,11 +85,11 @@ function MobileNavLink({ href, children }) {
   )
 }
 
-function MobileNavIcon({ open }) {
+function MobileNavToggleIcon({ open }) {
   return (
     <svg
       aria-hidden="true"
-      className="h-6 w-6 overflow-visible stroke-white"
+      className="h-6 w-6 overflow-visible stroke-black"  // Alterando para stroke preto
       fill="none"
       strokeWidth={2}
       strokeLinecap="round"
@@ -121,7 +121,7 @@ function MobileNavigation() {
             className="relative z-10 flex h-8 w-8 items-center justify-center focus:outline-none"
             aria-label="Toggle Navigation"
           >
-            <MobileNavIcon open={open} />
+            <MobileNavToggleIcon open={open} />  {/* Alterado aqui */}
           </Popover.Button>
           <Transition.Root>
             <Transition.Child
@@ -211,14 +211,15 @@ export function Header() {
         )}
       >
         <Container>
-          <div className="flex items-center justify-between">
-            <Link href="/" aria-label="Home">
-              <p className=" text-base">Daniela Leal</p>
+          <div className="flex items-center justify-between space-x-4">
+            <Link href="/" aria-label="Home" className="flex-shrink-0">
+              <p className="text-base sm:text-lg md:text-xl">Daniela Leal</p>
             </Link>
 
             <div className="lg:hidden">
               <MobileNavigation />
             </div>
+
             <nav className="hidden space-x-6 lg:flex">
               <NavLink href="#aboutme">Sobre mim</NavLink>
               <NavLink href="#Psicologia">Psicologia Clínica</NavLink>
