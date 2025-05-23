@@ -111,13 +111,13 @@ export default function PsychologySection() {
                 'Luto e perdas significativas',
                 'Depressão, sintomas depressivos e ideação suicida',
                 'Stress, burnout e esgotamento profissional',
-                'Neurodivergência na adolescência e adultez (PHDA, Autismo)',
                 'Conflitos familiares e relacionamentos interpessoais',
                 'Autoestima, autoconhecimento e desenvolvimento pessoal',
-                'Acompanhamento psicológico afirmativo para pessoas LGBTQIA+',
+                'Acompanhamento psicológico afirmativo LGBTQIA+',
                 'Identidade e transições de vida (divórcio, casamento, maternidade, parentalidade)',
                 'Perturbações de ansiedade (fobias, pânico, ansiedade generalizada, agorafobia, POC)',
                 'Perturbações da personalidade (bipolar, borderline, histriónica, paranoide, esquizoide, esquizotípica)',
+                'Neurodivergência na adolescência e adultez (PHDA, Autismo)',
               ].map((item) => (
                 <p key={item} className="flex items-start gap-2 text-left">
                   <CheckCircle

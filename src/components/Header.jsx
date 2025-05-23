@@ -28,12 +28,12 @@ export default function TopBar() {
     >
       <div className="mx-auto flex w-full max-w-screen-xl items-center justify-end space-x-6">
         {/* Telefone */}
-        <div className="flex items-center space-x-2">
+        {/* <div className="flex items-center space-x-2">
           <PhoneIcon className="h-5 w-5 text-slate-700" />
           <a href="tel:+351918275236" className="hover:underline">
             +351 918 275 236
           </a>
-        </div>
+        </div>*/}
 
         {/* Email */}
         <div className="flex items-center space-x-2">
