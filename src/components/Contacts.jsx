@@ -32,10 +32,10 @@ export function Contacts() {
 
     emailjs
       .sendForm(
-        'service_yv1x1pd',
-        'template_0yxclri',
+        'service_0nb7a2k',
+        'template_ucz5txb',
         e.target,
-        '8qY6HCFSONqoQZK3s'
+        'FcNAoML9uCZLgBPrM'
       )
       .then(() => {
         toast.success('Email enviado com sucesso!')
