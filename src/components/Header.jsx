@@ -121,7 +121,7 @@ function MobileNavigation() {
             className="relative z-10 flex h-8 w-8 items-center justify-center focus:outline-none"
             aria-label="Toggle Navigation"
           >
-            <MobileNavToggleIcon open={open} /> {/* Alterado aqui */}
+            <MobileNavToggleIcon open={open} />
           </Popover.Button>
           <Transition.Root>
             <Transition.Child
@@ -146,7 +146,7 @@ function MobileNavigation() {
             >
               <Popover.Panel
                 as="div"
-                className="absolute inset-x-4 top-full mt-4 flex flex-col space-y-4 rounded-lg bg-white p-4 text-lg shadow-lg ring-1 ring-black/5"
+                className="absolute left-0 right-0 top-full mx-4 mt-4 flex flex-col space-y-4 overflow-hidden rounded-lg bg-white p-4 text-lg shadow-lg ring-1 ring-black/5"
               >
                 <MobileNavLink href="#aboutme">Sobre mim</MobileNavLink>
                 <MobileNavLink href="#Psicologia">

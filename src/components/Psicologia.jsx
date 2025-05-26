@@ -20,7 +20,7 @@ export default function PsychologySection() {
       className="primaryBack py-6"
     >
       <Container className="relative">
-        <div className="mb-12 mt-12 first-letter:max-w-2xl md:mx-auto  xl:max-w-none">
+        <div className="mb-12 mt-6 first-letter:max-w-2xl md:mx-auto  xl:max-w-none">
           <hr className="mx-auto mb-24 w-3/4 border-t-2 border-[#e8cfc2]" />
           <div className="mb-16 text-center">
             <h2 className="sectionTitles text-3xl tracking-tight sm:text-3xl">
