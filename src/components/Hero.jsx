@@ -19,7 +19,7 @@ export default function HeroSection() {
               Psicóloga · Investigadora · Formadora
             </p>
             <p className="font-montserrat w-full whitespace-nowrap text-sm uppercase tracking-wider text-[#3B3B3B]/80 sm:text-base md:text-lg">
-              Consultora em Diversidade ·
+              Consultora em Diversidade 
             </p>
             <p className="font-montserrat w-full whitespace-nowrap text-sm uppercase tracking-wider text-[#3B3B3B]/80 sm:text-base md:text-lg">
               Equidade e Inclusão
